@@ -80,7 +80,7 @@ public class Main {
     }
 
     public static void indexDocument(IndexingService indexingService) throws IOException {
-        HashMap<String, String> fields = new HashMap<>();
+        HashMap<String, Object> fields = new HashMap<>();
         fields.put("content", "this is he not me");
         fields.put("id", "1");
         Document document = new Document(fields);
@@ -98,7 +98,7 @@ public class Main {
     private static void display(List<Document> documents) {
         for(Document document: documents)
         {
-            for(Map.Entry<String, String> entry : document.getFields().entrySet())
+            for(Map.Entry<String, Object> entry : document.getFields().entrySet())
             {
                 System.out.println(entry.getKey() +"=>"+ entry.getValue());
             }

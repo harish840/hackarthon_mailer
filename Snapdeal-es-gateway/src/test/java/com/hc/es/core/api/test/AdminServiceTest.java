@@ -91,7 +91,7 @@ public class AdminServiceTest extends AbstractElasticsearchIntegrationTest{
     	Client client = getClient();
     	creteTestIndex(client);
     	
-        Map<String, String> m = new HashMap<>();
+        Map<String, Object> m = new HashMap<>();
         m.put("school", "carmel");
         m.put("id", "24");
         Document document2 = new Document(m);

@@ -13,7 +13,7 @@ import java.util.Map;
  * @author root
  */
 public class Document {
-    private final Map<String, String> fields;
+    private final Map<String, Object> fields;
 
     /**
      * Initializes an empty hashmap as document
@@ -25,14 +25,14 @@ public class Document {
     /**
      * @param fields Map to initialise fields
      */
-    public Document(Map<String, String> fields) {
+    public Document(Map<String, Object> fields) {
         this.fields = fields;
     }
 
     /**
      * @return fields
      */
-    public Map<String, String> getFields() {
+    public Map<String, Object> getFields() {
         return fields;
     }
 }

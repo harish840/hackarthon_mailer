@@ -6,5 +6,7 @@
 	<classpathentry kind="lib" path="/home/vikas/Downloads/stanford-corenlp-full-2014-08-27/stanford-corenlp-3.4.1-models.jar"/>
 	<classpathentry kind="lib" path="/home/vikas/Downloads/stanford-corenlp-full-2014-08-27/ejml-0.23.jar"/>
 	<classpathentry kind="lib" path="/home/vikas/hackathon/hackarthon_mailer/SmartMailReader/refernce libs/javax.mail-1.4.5.jar"/>
+	<classpathentry kind="lib" path="/home/vikas/.m2/repository/org/elasticsearch/elasticsearch/1.7.1/elasticsearch-1.7.1.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Snapdeal-es-gateway"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

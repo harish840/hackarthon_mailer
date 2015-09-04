@@ -39,7 +39,8 @@ public class SentenceDetails {
     public class WordDetails {
         private String word;
         private String partOfSpeech;
-
+        private List<String> determinantsList = null;
+        
         public String getWord() {
             return word;
         }
@@ -54,6 +55,14 @@ public class SentenceDetails {
 
         public void setPartOfSpeech(String partOfSpeech) {
             this.partOfSpeech = partOfSpeech;
+        }
+
+        public List<String> getDeterminantsList() {
+            return determinantsList;
+        }
+
+        public void setDeterminantsList(List<String> determinantsList) {
+            this.determinantsList = determinantsList;
         }
     }
 }

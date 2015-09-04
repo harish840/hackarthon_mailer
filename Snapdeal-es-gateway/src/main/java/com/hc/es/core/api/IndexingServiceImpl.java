@@ -72,11 +72,11 @@ public class IndexingServiceImpl implements IndexingService {
      */
     @Override
     public IndexResponse index(String indexName, String typeName, Document document, List<ActionListener> listeners) throws IOException {
-        String id = document.getFields().get("id");
+        String id = (String)document.getFields().get("id");
     	IndexRequestBuilder indexRequestBuilder
                 = id != null ? client.prepareIndex(indexName, typeName, id) : client.prepareIndex(indexName, typeName);
         XContentBuilder contentBuilder = jsonBuilder().startObject().prettyPrint();
-        for (Map.Entry<String, String> entry : document.getFields().entrySet()) {
+        for (Map.Entry<String, Object> entry : document.getFields().entrySet()) {
             contentBuilder.field(entry.getKey(), entry.getValue());
         }
         contentBuilder.endObject();

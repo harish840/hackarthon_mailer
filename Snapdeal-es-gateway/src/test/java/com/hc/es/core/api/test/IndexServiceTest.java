@@ -29,7 +29,7 @@ public class IndexServiceTest extends AbstractElasticsearchIntegrationTest{
     public void testIndex() {
     	Client client = getClient();
         IndexingServiceImpl impl = new IndexingServiceImpl(getClient());
-        Map<String, String> docMap = new HashMap<>();
+        Map<String, Object> docMap = new HashMap<>();
         docMap.put("test", "test123");
         docMap.put("id", "1");
         Document doc = new Document(docMap);

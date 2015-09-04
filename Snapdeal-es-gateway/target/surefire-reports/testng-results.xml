@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="10596" started-at="2015-09-04T19:45:41Z" finished-at="2015-09-04T19:45:52Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="10596" started-at="2015-09-04T19:45:41Z" finished-at="2015-09-04T19:45:52Z">
+      <class name="com.hc.es.core.api.test.SimpleElasticsearchTest">
+        <test-method status="PASS" signature="startEmbeddedElasticsearchServer()[pri:0, instance:com.hc.es.core.api.test.SimpleElasticsearchTest@27d43d30]" name="startEmbeddedElasticsearchServer" is-config="true" duration-ms="279" started-at="2015-09-05T01:15:47Z" finished-at="2015-09-05T01:15:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startEmbeddedElasticsearchServer -->
+        <test-method status="PASS" signature="indexSimpleDocument()[pri:0, instance:com.hc.es.core.api.test.SimpleElasticsearchTest@27d43d30]" name="indexSimpleDocument" duration-ms="872" started-at="2015-09-05T01:15:47Z" finished-at="2015-09-05T01:15:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- indexSimpleDocument -->
+        <test-method status="PASS" signature="shutdownEmbeddedElasticsearchServer()[pri:0, instance:com.hc.es.core.api.test.SimpleElasticsearchTest@27d43d30]" name="shutdownEmbeddedElasticsearchServer" is-config="true" duration-ms="299" started-at="2015-09-05T01:15:48Z" finished-at="2015-09-05T01:15:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutdownEmbeddedElasticsearchServer -->
+      </class> <!-- com.hc.es.core.api.test.SimpleElasticsearchTest -->
+      <class name="com.hc.es.core.api.test.IndexServiceTest">
+        <test-method status="PASS" signature="startEmbeddedElasticsearchServer()[pri:0, instance:com.hc.es.core.api.test.IndexServiceTest@76c0fd31]" name="startEmbeddedElasticsearchServer" is-config="true" duration-ms="178" started-at="2015-09-05T01:15:50Z" finished-at="2015-09-05T01:15:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startEmbeddedElasticsearchServer -->
+        <test-method status="PASS" signature="testIndex()[pri:0, instance:com.hc.es.core.api.test.IndexServiceTest@76c0fd31]" name="testIndex" duration-ms="872" started-at="2015-09-05T01:15:51Z" finished-at="2015-09-05T01:15:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIndex -->
+        <test-method status="PASS" signature="shutdownEmbeddedElasticsearchServer()[pri:0, instance:com.hc.es.core.api.test.IndexServiceTest@76c0fd31]" name="shutdownEmbeddedElasticsearchServer" is-config="true" duration-ms="314" started-at="2015-09-05T01:15:52Z" finished-at="2015-09-05T01:15:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutdownEmbeddedElasticsearchServer -->
+      </class> <!-- com.hc.es.core.api.test.IndexServiceTest -->
+      <class name="com.hc.es.core.api.test.SearchServiceTest">
+        <test-method status="PASS" signature="startEmbeddedElasticsearchServer()[pri:0, instance:com.hc.es.core.api.test.SearchServiceTest@782ed8df]" name="startEmbeddedElasticsearchServer" is-config="true" duration-ms="2887" started-at="2015-09-05T01:15:41Z" finished-at="2015-09-05T01:15:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startEmbeddedElasticsearchServer -->
+        <test-method status="PASS" signature="filterTest()[pri:0, instance:com.hc.es.core.api.test.SearchServiceTest@782ed8df]" name="filterTest" duration-ms="1852" started-at="2015-09-05T01:15:44Z" finished-at="2015-09-05T01:15:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterTest -->
+        <test-method status="PASS" signature="shutdownEmbeddedElasticsearchServer()[pri:0, instance:com.hc.es.core.api.test.SearchServiceTest@782ed8df]" name="shutdownEmbeddedElasticsearchServer" is-config="true" duration-ms="592" started-at="2015-09-05T01:15:46Z" finished-at="2015-09-05T01:15:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutdownEmbeddedElasticsearchServer -->
+      </class> <!-- com.hc.es.core.api.test.SearchServiceTest -->
+      <class name="com.hc.es.core.api.test.AdminServiceTest">
+        <test-method status="PASS" signature="startEmbeddedElasticsearchServer()[pri:0, instance:com.hc.es.core.api.test.AdminServiceTest@4ba0561d]" name="startEmbeddedElasticsearchServer" is-config="true" duration-ms="221" started-at="2015-09-05T01:15:48Z" finished-at="2015-09-05T01:15:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startEmbeddedElasticsearchServer -->
+        <test-method status="PASS" signature="addMappingTest()[pri:0, instance:com.hc.es.core.api.test.AdminServiceTest@4ba0561d]" name="addMappingTest" duration-ms="510" started-at="2015-09-05T01:15:48Z" finished-at="2015-09-05T01:15:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMappingTest -->
+        <test-method status="PASS" signature="testCreateIndex()[pri:0, instance:com.hc.es.core.api.test.AdminServiceTest@4ba0561d]" name="testCreateIndex" duration-ms="429" started-at="2015-09-05T01:15:49Z" finished-at="2015-09-05T01:15:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateIndex -->
+        <test-method status="PASS" signature="updateIndexTest()[pri:0, instance:com.hc.es.core.api.test.AdminServiceTest@4ba0561d]" name="updateIndexTest" duration-ms="916" started-at="2015-09-05T01:15:49Z" finished-at="2015-09-05T01:15:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateIndexTest -->
+        <test-method status="PASS" signature="shutdownEmbeddedElasticsearchServer()[pri:0, instance:com.hc.es.core.api.test.AdminServiceTest@4ba0561d]" name="shutdownEmbeddedElasticsearchServer" is-config="true" duration-ms="357" started-at="2015-09-05T01:15:50Z" finished-at="2015-09-05T01:15:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutdownEmbeddedElasticsearchServer -->
+      </class> <!-- com.hc.es.core.api.test.AdminServiceTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

@@ -144,7 +144,7 @@ public class SearchServiceImpl implements SearchService {
         SearchHits hits = response.getHits();
         if (hits.getTotalHits() > 0) {
             for (int hitsIndex = 0; hitsIndex < hits.getTotalHits(); hitsIndex++) {
-                Map<String, String> fieldMap = new HashMap<>();
+                Map<String, Object> fieldMap = new HashMap<>();
                 SearchHit hit = hits.getAt(hitsIndex);
                 Map<String, SearchHitField> map = hit.fields();
                 fieldMap.put(ESConstants.ID, hit.getId());
