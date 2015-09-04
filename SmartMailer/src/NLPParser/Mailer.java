@@ -84,6 +84,7 @@ public class Mailer {
                             email.setSubject(message.getSubject());
                             System.out.println(email.toString());
                             MailContent content = parser.parse(email);
+                            //TODO; call forward email's method to forward email
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
