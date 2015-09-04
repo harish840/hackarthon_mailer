@@ -26,6 +26,16 @@ public class SentenceDetails {
         words.add(wordDetails);
     }
     
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        for(WordDetails word: words){
+            sb.append(word.getWord());
+            sb.append(":");
+            sb.append(word.getPartOfSpeech());
+            sb.append(",");
+        }
+        return sb.toString();
+    }
     public class WordDetails {
         private String word;
         private String partOfSpeech;

@@ -12,15 +12,17 @@ import java.util.List;
  * @author vikas
  */
 public class MailContent {
-    SentenceDetails       subject;
-    List<SentenceDetails> body = new ArrayList<>();
+    List<SentenceDetails> subject = new ArrayList<>();
+    List<SentenceDetails> body    = new ArrayList<>();
     String                sender;
+    String                date;
+    String                uniqueId;
 
-    public SentenceDetails getSubject() {
+    public List<SentenceDetails> getSubject() {
         return subject;
     }
 
-    public void setSubject(SentenceDetails subject) {
+    public void setSubject(List<SentenceDetails> subject) {
         this.subject = subject;
     }
 
@@ -38,5 +40,21 @@ public class MailContent {
 
     public void setSender(String sender) {
         this.sender = sender;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getUniqueId() {
+        return uniqueId;
+    }
+
+    public void setUniqueId(String uniqueId) {
+        this.uniqueId = uniqueId;
     }
 }
