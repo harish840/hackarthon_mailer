@@ -4,6 +4,8 @@
  */
 package NLPParser;
 
+import IntelligentThinker.IntelligentAnalyzer;
+
 /**
  * @version 1.0, 04-Sep-2015
  * @author vikas
@@ -11,6 +13,7 @@ package NLPParser;
 public class SmartMailerInit {
 
     public static void main(String[] args) {
+        IntelligentAnalyzer.getInstance().initES();
         Mailer.getInstance().fetchMail();
     }
 

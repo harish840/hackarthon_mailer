@@ -14,7 +14,21 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
 public class ForwardEmail {
-    public static void forwardEmail(Message message, String sendToEmail, String _mailId) {
+
+    private static ForwardEmail forwardEmail = null;
+
+    public static ForwardEmail getInstance() {
+        if (null == forwardEmail) {
+            synchronized (ForwardEmail.class) {
+                if (null == forwardEmail) {
+                    forwardEmail = new ForwardEmail();
+                }
+            }
+        }
+        return forwardEmail;
+    }
+
+    public void forwardEmail(Message message, String sendToEmail, String _mailId) {
 
         Properties props = new Properties();
         props.put("mail.smtp.host", "smtp.gmail.com");

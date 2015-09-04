@@ -30,7 +30,7 @@ public class Mailer {
     private static Mailer mailer;
 
     private static Parser parser = Parser.getInstance();
-    
+
     public static Mailer getInstance() {
         if (null == mailer) {
             synchronized (Mailer.class) {
@@ -84,7 +84,7 @@ public class Mailer {
                             email.setSubject(message.getSubject());
                             System.out.println(email.toString());
                             MailContent content = parser.parse(email);
-                            //TODO; call forward email's method to forward email
+                            ForwardEmail.getInstance().forwardEmail(message, null, content.getUniqueId());
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
